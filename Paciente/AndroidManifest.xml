@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tesis.app.paciente"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    
+    <permission android:name="com.tesis.app.paciente.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+	<uses-permission android:name="com.tesis.app.paciente.permission.C2D_MESSAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.tesis.app.paciente.LoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tesis.app.paciente.HomeActivity"
+            android:label="@string/title_activity_home"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.tesis.app.paciente.MonitorsActivity"
+            android:label="@string/title_activity_monitors"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.tesis.app.paciente.ResultActivity"
+            android:label="@string/title_activity_result"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.tesis.app.paciente.Estadisticas"
+            android:label="@string/title_activity_estadisticas" >
+        </activity>
+        <activity
+            android:name="com.tesis.app.paciente.RegisterActivity"
+            android:label="@string/title_activity_register"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.tesis.app.paciente.ConfigEstadistica"
+            android:label="@string/title_activity_config_estadistica"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.tesis.app.paciente.GraficaEstadistica"
+            android:label="@string/title_activity_grafica_estadistica" >
+        </activity>
+        <activity
+            android:name="com.tesis.app.paciente.BusquedaSolicitud"
+            android:label="@string/title_activity_busqueda_solicitud"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.tesis.app.paciente.ResultadoBuscarSolicitud"
+            android:label="@string/title_activity_resultado_buscar_solicitud"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.tesis.app.paciente.DatosMedico"
+            android:label="@string/title_activity_datos_medico"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.tesis.app.paciente.DatosConsultorio"
+            android:label="@string/title_activity_datos_consultorio"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.tesis.app.paciente.ListaDiagnostico"
+            android:label="@string/title_activity_lista_dignostico"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.tesis.app.paciente.ServidorActivity"
+            android:label="@string/title_activity_servidor"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.tesis.app.paciente.HistorialActivity"
+            android:label="@string/title_activity_historial"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.tesis.app.paciente.ConfiguracionActivity"
+            android:label="@string/title_activity_configuracion"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <meta-data android:name="com.google.android.gms.version"
+           android:value="@integer/google_play_services_version" />
+        
+        <receiver
+            android:name=".GCMBroadcastReceiver"
+	        android:permission="com.google.android.c2dm.permission.SEND" >
+         	<intent-filter>
+         	    <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+              	<category android:name="com.tesis.app.paciente" />
+         	</intent-filter>
+     	</receiver>
+     	<service android:name=".GCMIntentServicePaciente" />
+    </application>
+
+</manifest>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Paciente</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_salir">Salir</string>
+    <string name="action_servidor">Conf. Servidor</string>
+    <string name="action_configuracion">Configuracion</string>
+    <string name="action_solicitudes">Solicitudes</string>
+    <string name="userPlaceholder">Usuario</string>
+    <string name="passwordPlaceholder">Contraseña</string>
+    <string name="olvidarClaveText">¿Olvido su contraseña?</string>
+    <string name="ingresarButton">Entrar</string>
+    <string name="title_activity_home">Home</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="minitorIcon">Seccion de monitorizacion</string>
+    <string name="buttonMonitoreo">Monitoreo</string>
+    <string name="buttonEstadisticas">Estadisticas</string>
+    <string name="buttonConfig">Configuracion</string>
+    <string name="buttonSalir">Salir</string>
+    <string name="title_activity_monitors">Monitoreos</string>
+    <string name="title_activity_result">Resultado</string>
+    <string name="buttonAceptar">Aceptar</string>
+
+    <string-array name="glucosa_estados">
+        <item>Antes de comer</item>
+        <item>Despues de comer</item>
+    </string-array>
+
+    <string name="title_activity_estadisticas">Estadisticas</string>
+    <string name="title_activity_register">Registrarse</string>
+
+    <string-array name="tipos_id">
+        <item>C.C</item>
+        <item>T.I</item>
+    </string-array>
+    <string-array name="tipo_sexo">
+        <item>Masculino</item>
+        <item>Femenino</item>
+        <item>Otro</item>
+    </string-array>
+
+    <string name="tipo_id">Tipo de identificacion</string>
+    <string name="tipo_sexo">Sexo</string>
+    <string name="hint_nombre">Nombres</string>
+    <string name="hint_apellido">Apellidos</string>
+    <string name="hint_numero_id">Numero de Identificacion</string>
+    <string name="hint_correo">Correo</string>
+    <string name="hint_clave">Contraseña</string>
+    <string name="button_register">Registrar</string>
+    <string name="title_form_registro">Formulario de Registro</string>
+    <string name="title_activity_config_estadistica">ConfigEstadistica</string>
+    <string name="login_registrarse">Registrarse</string>
+    <string name="tipo_chequeos">Tipo de Chequeo</string>
+
+    <string-array name="tipos_chequeo">
+        <item>Glucosa</item>
+        <item>Presion</item>
+        <item>Arritmia</item>
+    </string-array>
+
+    <string name="label_fecha_inicio">Fecha inicial</string>
+    <string name="formato_fecha">Año-Mes-Dia</string>
+    <string name="label_fecha_fin">Fecha final</string>
+    <string name="fecha">Fecha</string>
+    <string name="ver">Ver</string>
+    <string name="title_activity_grafica_estadistica">GraficaEstadistica</string>
+    <string name="estadisticas_chequeo">Estadisticas del chequeo</string>
+    <string name="correo_hint">Correo</string>
+    <string name="title_activity_busqueda_solicitud">BusquedaSolicitud</string>
+    <string name="criterio_solicitud">Buscar</string>
+
+    <string-array name="criterio_busqueda_solicitud">
+        <item>Medico</item>
+        <item>Consultorio</item>
+    </string-array>
+
+    <string name="hint_nombre_busqueda">Nombre</string>
+    <string name="title_activity_resultado_buscar_solicitud">Resultado Solicitud</string>
+    <string name="title_activity_datos_medico">Datos Medico</string>
+    <string name="btn_enviar_solicitud">Enviar solicitud</string>
+    <string name="title_activity_datos_consultorio">Datos Consultorio</string>
+    <string name="title_activity_lista_dignostico">Lista Dignosticos</string>
+    <string name="sexo">Sexo</string>
+    <string name="hint_direccion">Direccion</string>
+    <string name="hint_telefono">Telefono</string>
+    <string name="title_activity_servidor">Servidor</string>
+    <string name="boton_guardar">Guardar</string>
+    <string name="label_url">Url del Web Service</string>
+    <string name="hint_url_servidor">www.ejemplo.com:3000</string>
+    <string name="LargeText">LargeText</string>
+    <string name="descripcion_imagendescripcion_imagen">descripcion_imagendescripcion_imagen</string>
+    <string name="fecha_nacimiento">Fecha de nacimiento</string>
+    <string name="departamentos">Departamento</string>
+    <string name="municipios">Municipio</string>
+    <string name="separador_slash">/</string>
+    <string name="title_activity_historial">Historial (HL7)</string>
+    <string name="titulo_entidad">ENTIDAD</string>
+    <string name="titulo_autor">AUTOR</string>
+    <string name="titulo_custodio">CUSTODIO</string>
+    <string name="prompt_nota_msg">Escribir nota:</string>
+    <string name="title_form_config">Editar datos</string>
+    <string name="title_activity_configuracion">Configuracion</string>
+    <string name="boton_editar">Editar</string>
+    <string name="leer_aceptar_condiciones">"He leido y acepto las "</string>
+    <string name="condiciones">condiciones de uso</string>
+    <string name="texto_recuperar_cuenta">Correo electronico:</string>
+
+</resources>

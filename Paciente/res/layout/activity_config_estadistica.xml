@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".ConfigEstadistica"
+    android:background="@drawable/back" >
+
+    <TextView
+        android:id="@+id/tvTiposChequeo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/tipo_chequeos" />
+
+    <Spinner
+        android:id="@+id/spinnerTiposChequeos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tvTiposChequeo"
+        android:layout_marginTop="16dp"
+        android:entries="@array/tipos_chequeo" />
+
+    <TextView
+        android:id="@+id/tv_titulo_grafica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/spinnerTiposChequeos"
+        android:layout_below="@+id/spinnerTiposChequeos"
+        android:layout_marginTop="24dp"
+        android:text="@string/label_fecha_inicio" />
+
+    <TextView
+        android:id="@+id/tvFechaInicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tv_titulo_grafica"
+        android:layout_marginTop="16dp"
+        android:layout_toLeftOf="@+id/buttonFecha1"
+        android:text="@string/formato_fecha"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/tvFechaFin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvTelefono"
+        android:layout_marginTop="16dp"
+        android:layout_toLeftOf="@+id/buttonFecha2"
+        android:text="@string/formato_fecha"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/buttonVer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/buttonFecha2"
+        android:layout_marginTop="32dp"
+        android:background="#5c89c7"
+        android:text="@string/ver"
+        android:textColor="#fff"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvTelefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvFechaInicio"
+        android:layout_below="@+id/buttonFecha1"
+        android:layout_marginTop="24dp"
+        android:text="@string/label_fecha_fin" />
+
+    <ImageButton
+        android:id="@+id/buttonFecha1"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/buttonFecha2"
+        android:layout_below="@+id/tv_titulo_grafica"
+        android:background="@drawable/ic_action_calendario"
+        android:contentDescription="@string/fecha" />
+
+    <ImageButton
+        android:id="@+id/buttonFecha2"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/buttonVer"
+        android:layout_below="@+id/tvTelefono"
+        android:background="@drawable/ic_action_calendario"
+        android:contentDescription="@string/fecha" />
+
+</RelativeLayout>

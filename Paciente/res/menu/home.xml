@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_solicitudes"
+        android:showAsAction="always"
+        android:title="@string/action_solicitudes"
+        android:icon="@drawable/ic_action_solicitar" />
+    
+    <item 
+        android:id="@+id/action_configuracion"
+        android:showAsAction="always"
+        android:title="@string/action_configuracion"
+        android:icon="@drawable/ic_action_configuracion"/>
+    
+    <item
+        android:id="@+id/action_salir"
+        android:showAsAction="always"
+        android:title="@string/action_salir"
+        android:icon="@drawable/ic_action_salir" />
+    
+</menu>
